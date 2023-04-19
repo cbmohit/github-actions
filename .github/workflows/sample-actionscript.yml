@@ -32,3 +32,6 @@ jobs:
         uses: 'google-github-actions/auth@v1'
         with:
           credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
+      
+      - name: Run a one-line script
+        run: echo GCP authentication done
